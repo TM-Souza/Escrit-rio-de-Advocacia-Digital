@@ -1,5 +1,24 @@
+.icon_logo {
+  width: 18%;
+}
+
+@media (min-width: 1200px) {
+  .icon_logo {
+    width: 7%;
+  }
+}
+.icon_footer {
+  width: 50%;
+}
+
+@media (min-width: 1200px) {
+  .icon_footer {
+    width: 20%;
+  }
+}
+
 .icon_menu {
-  width: 30%;
+  width: 20%;
 }
 
 .icon_close {
@@ -7,15 +26,43 @@
 }
 
 .icon_sobre {
-  width: 25%;
+  width: 15%;
+}
+
+@media (min-width: 1200px) {
+  .icon_sobre {
+    width: 6%;
+  }
 }
 
 .dep_ico {
-  width: 10%;
+  width: 15%;
+}
+
+@media (min-width: 1200px) {
+  .dep_ico {
+    width: 4.5%;
+  }
+}
+
+.ico_service {
+  width: 15%;
+}
+
+@media (min-width: 1200px) {
+  .ico_service {
+    width: 5%;
+  }
 }
 
 .icon_zap {
   width: 30%;
+}
+
+@media (min-width: 1200px) {
+  .icon_zap {
+    width: 25%;
+  }
 }
 
 .icon_tel {
@@ -26,18 +73,44 @@
   width: 10%;
 }
 
+@media (min-width: 1200px) {
+  .icon_loc {
+    width: 3%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .icon_tel {
+    width: 3%;
+  }
+}
+
 .icon_email {
   width: 10%;
+}
+
+@media (min-width: 1200px) {
+  .icon_email {
+    width: 3%;
+  }
 }
 
 .icon_fb {
   width: 6%;
 }
 
+@media (min-width: 1200px) {
+  .icon_fb {
+    width: 2%;
+  }
+}
+
 .icon_insta {
   width: 6%;
 }
 
-/*.icon_seta {
-  width: 10%;
-}*/
+@media (min-width: 1200px) {
+  .icon_insta {
+    width: 2%;
+  }
+}

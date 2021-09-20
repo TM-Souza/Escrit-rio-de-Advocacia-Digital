@@ -39,9 +39,13 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination'
   },
   mousewheel: true,
-  keyboard: true
+  keyboard: true,
+  breakpoints: {
+    767: { slidesPerView: 2, setWrapperSize: true }
+  }
 })
 
+/*  A ROLAGEM DE PÁGINA NÃO QUIS FUNCIONAR */
 /*##################################################################################*/
 
 const scrollReveal = scrollReveal({
@@ -52,22 +56,11 @@ const scrollReveal = scrollReveal({
 })
 
 scrollReveal.reveal(
-  `#home .image, #home .text,
-  #sobre .image, #sobre .text,
+  `#home .image, #home .cxText, #home .text, #home .button,
+  #sobre .hed, #sobre .image, #sobre .text,
   #service header, #service .card,
   #depoimentos header, #depoimentos .depoimentos
   #contato .text, #contato .links
   `,
   { interval: 100 }
 )
-
-/*#####################################################################################*/
-
-const backToTop = document.querySelector('.back-to-top')
-window.addEventListener('scroll', function () {
-  if (window.scrollY >= 560) {
-    backToTop.classList.add('show')
-  } else {
-    backToTop.classList.remove('show')
-  }
-})

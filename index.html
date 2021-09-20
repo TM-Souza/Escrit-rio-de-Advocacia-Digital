@@ -25,8 +25,12 @@
 
   <body>
     <header id="header">
+      <img class="icon_logo" src="icones/logo_png.png" alt="some text" />
+
       <nav class="container">
-        <a href="#"><strong>Advocacia Francisco Antônio de S. Filho<div>OAB/RO 2935</div></strong> </a>
+        <div class="text">
+          <a href="#"><strong>Advocacia Francisco Antônio de S. Filho<div>OAB/RO 2935</div></strong></a>
+        </div>
         
         <!--------------------------------MENU------------------------------->
         <div class="menu">
@@ -41,7 +45,7 @@
           </ul>
         </div>
         <!--------------------------------/MENU------------------------------>
-        <div>
+        <div class="icon">
           <img class="toggle icon_menu" src="icones/menu.png" />
         </div>
 
@@ -57,21 +61,14 @@
 
       <section class="section" id="home">
         <div class="container grid">
+
           <div class="image">
-            <img
-              class="imageIn"
-              src="imagens_nlw/img-gif.gif"
-              alt="some text"
-            />
+            <img class="imageIn"  src="imagens_nlw/img-gif.gif" alt="some text" />
           </div>
 
-          <div class="cx_logo">
-            <img
-              class="logo"
-              src="imagens_nlw/logo_nome.png"
-              alt="some text"
-            />
-          </div>
+          
+            
+          
       
           <div class="text">
             <div class="title">
@@ -84,8 +81,8 @@
             <p class="text">
               Sou especializado em direito civil, mas dependendo do caso posso
               atuar em outras áreas.<div>Que tal agendar um horário para
-              conversarmos?
-            </p></div>
+              conversarmos?</div> </p>
+           
             <br>
             <br>
             <a class="button" href="#">AGENDAR HORÁRIO</a>
@@ -99,8 +96,8 @@
       <section class="section" id="sobre">
         <div class="container grid">
           <div class="hed">
-            <h1>Sobre mim</h1>
-            <!--<img class="icon_sobre" src="icones/advogado.png" alt="some text" />-->
+            <h1><strong>Sobre mim</strong></h1>
+            <img class="icon_sobre" src="icones/advogado.png" alt="some text" />
           </div>
          
           <div class="image">
@@ -122,10 +119,14 @@
         <div class="container grid">
 
           <div class="hed">
-            <h1>Serviços</h1>
+            <h1><strong>Serviços</strong></h1>
+            <img class="ico_service" src="icones/carimbo.png" alt="some text" />
           </div>
-               
+          
+          <div class="text">
             <p>O profissional do Direito Civil abrange uma grande área de atuação, mas ela pode se resumir a Direito : das pessoas, das obrigações e contratos, reais, da família, das sucessões e responsabilidade civil.</p>
+          </div>
+            
           
 
         <div class="cards grid">
@@ -163,11 +164,16 @@
       <!-----------------------------   DEPOIMENTOS ---------------------------------------------------->
 
       <section class="section" id="depoimentos">
-        <div class="container">
-          <header>
-            <h1 class="title"><strong>Depoimentos de Clientes</strong></h1>
-          </header>
 
+        <div class="container grid">
+          <div class="hed">
+            <h1><strong>Depoimentos de Clientes</strong></h1>
+            <img class="dep_ico" src="icones/depoimento.png" alt="some text" />
+          </div>
+        </div>
+
+        <div class="container">
+          
           <div class="depoimentos swiper">
             <div class="swiper-wrapper">
 
@@ -226,12 +232,19 @@
       <section class="section" id="contato">
         <div class="container grid">
         
-            <h1 class="title"><strong>Entre em contato comigo</strong></h1>
+          <div class="hed">
+            <h1><strong>Entre em contato comigo!</strong></h1>
+          </div>
+            
+          <div class="text">
             <p>
               Fale comigo, podemos conversar, tirar dúvidas, fazer o possível para resolução da sua causa e também te ajudar em outra área do direito.
             </p>
+          </div>
+            
 
-            <a href="https://api.whatsapp.com/send?phone=+5569992517998&text=Olá! Quero falar com você." class="button"><img class="icon_zap" src="icones/whatsapp.png" alt="some text" />Fale comigo</a>
+            <a href="https://api.whatsapp.com/send?phone=+5569992517998&text=Olá! Quero falar com você." class="button"><img class="icon_zap" src="icones/whatsapp.png" alt="some text" />
+            <strong>Fale comigo</strong></a>
        
             <div class="links">
               <ul class="grid">
@@ -253,26 +266,23 @@
     </main>
 
     <footer class="section">
-      <div class="container">
-        <div class="marca">
-          <img class="logo" href="#home" src="imagens_nlw/logo_nome.png"  alt="some text" />
+        <div class="brand">
+          <a href="#home"><img class="logo icon_footer" src="icones/logo_nome.png" alt="some text" /></a>
+
+          <p>Todos os direitos reservados.</p>
           <p>©2021 Advocacia Francisco A. de Souza Filho.</p>
-          <p> Todos os direitos reservados.</p>
-              
-         
+                        
         </div>
         
         <div class="social">
-         <a href="https://facebook.com" target="_blank"><img class="icon_fb" src="icones/facebook.png" alt="some text" /></a>
-         <a href="https://instagram.com" target="_blank"><img class="icon_insta" src="icones/instagram.png" alt="some text" /></a>
-         
+         <a href="https://facebook.com" target="_blank"><img class="icone icon_fb" src="icones/facebook.png" alt="some text" /></a>
+         <a href="https://instagram.com" target="_blank"><img class="icone icon_insta" src="icones/instagram.png" /></a>
+     
+          
+      
         </div>
       </div>
     </footer>
-
-    <a href="#home">
-    <img class="back-to-top" src="icones/seta.png" alt="some text" />
-    </a>
 
   <!---------------------------    SCRIPTS    ------------------------------------------------------->
 

@@ -41,20 +41,17 @@ h1 {
 }
 
 /*#######################################   IMAGENS     #################################*/
-.logo {
-  width: 60%;
-  height: auto;
-}
 
 .imageIn {
-  width: 60%;
+  width: 90%;
   height: auto;
 }
 
 .imageS {
-  width: 70%;
+  width: 90%;
   height: auto;
 }
+
 /*################################ LAYOUT ##########################################*/
 
 .section header {
@@ -63,9 +60,11 @@ h1 {
 
 #header {
   width: 100%;
+  height: 8%;
   border-bottom: 1px solid hsl(0, 0%, 100%);
   margin-bottom: 1.5rem;
-  display: flex;
+  display: inline-flex;
+  align-items: center;
   background: hsl(210, 100%, 17%);
   position: fixed;
   z-index: 100;
@@ -73,10 +72,19 @@ h1 {
   left: 0;
 }
 
+#header .icon {
+  margin-right: -6rem;
+}
+
 #header.scroll {
-  box-shadow: 0px 0px 8px hsl(43, 74%, 49%);
-  border-bottom: 1px solid hsl(43, 74%, 49%);
+  box-shadow: 0px 0px 15px hsl(0, 0%, 0%);
+
   transition: 0.3s;
+}
+
+#header .text {
+  text-align: center;
+  margin-left: 2rem;
 }
 
 .container {
@@ -86,10 +94,6 @@ h1 {
 
 .section {
   padding: 4rem;
-}
-
-.section .title {
-  margin-bottom: 1rem;
 }
 
 .grid {
@@ -206,33 +210,34 @@ nav.show img.icon_close {
 }
 #home .image img {
   position: relative;
-  left: 50%;
+  margin-left: 1.2rem;
+  margin-top: -1rem;
 }
 
 #home .image::before {
   content: '';
   height: 100%;
-  width: 70%;
+  width: 100%;
   background: hsl(43, 74%, 49%);
   position: absolute;
-  top: 3%;
-  left: 50%;
+  top: -3.5rem;
   z-index: 0;
   border-radius: 0.1rem;
+  border-top: 2px solid hsl(210, 100%, 17%);
+  border-left: 2px solid hsl(210, 100%, 17%);
+  border-right: 2px solid hsl(210, 100%, 17%);
+  border-bottom: 2px solid hsl(210, 100%, 17%);
 }
 
+/*######################################################################################################*/
+
 #home .cxText {
-  margin-bottom: 2rem;
-  margin-top: -2rem;
   background: hsl(210, 100%, 17%);
   color: hsl(0, 0%, 100%);
-  height: 8rem;
-
+  height: 7rem;
   display: inline-flex;
   align-items: center;
-  padding: 2 4rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0 1rem;
   border-radius: 0.25rem;
   border-bottom: 4px solid hsl(0, 0%, 100%);
 }
@@ -240,18 +245,17 @@ nav.show img.icon_close {
 /*#######################################    HOME TEXTO  ##################################*/
 
 #home .text {
-  max-width: 100%;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
   text-align: center;
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 
 #home .text p {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 #home .text h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 /*####################################    BUTTON  ##############################################*/
@@ -291,15 +295,13 @@ nav.show img.icon_close {
   margin: 0;
 }
 #sobre .hed {
-  width: 100%;
   margin-bottom: 1.5rem;
   display: inline-flex;
   align-items: center;
   background: hsl(210, 100%, 17%);
   z-index: 0;
   margin-top: -4rem;
-  padding-left: 8rem;
-  left: -5rem;
+  padding-left: 7rem;
   border-radius: 0.25rem;
 }
 /*###############################   SOBRE IMAGENS   ##########################################*/
@@ -309,34 +311,34 @@ nav.show img.icon_close {
 }
 #sobre .image img {
   position: relative;
-  margin-right: 7rem;
-  margin-top: -1rem;
+  margin-top: 0.69rem;
+  margin-left: 1rem;
 }
 
 #sobre .image::before {
   content: '';
-  height: 100%;
-  width: 70%;
+  height: 70%;
+  width: 136%;
   background: hsl(43, 74%, 49%);
+  border-bottom: 2px solid hsl(210, 100%, 17%);
   position: absolute;
-  top: 1rem;
-  padding-right: 3rem;
+  margin-top: 4rem;
+  margin-left: -4rem;
   z-index: 0;
-  border-radius: 0.1rem;
-  box-shadow: 0px 0px 12px hsl(210, 100%, 17%);
-  border-bottom: 0.25rem solid hsl(210, 100%, 17%);
 }
 
 /*###############################   SOBRE TEXTO   ##########################################*/
 
 #sobre .text {
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
-  text-align: center;
+  margin-top: -4rem;
+  margin-bottom: 1rem;
+  margin-right: -2rem;
+  margin-left: -2rem;
 }
 
 #sobre .text p {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
   font: 400 1rem 'Aldrich', sans-serif;
 }
 
@@ -351,7 +353,6 @@ nav.show img.icon_close {
 }
 
 #service .hed {
-  width: 100%;
   margin-bottom: 1.5rem;
   display: inline-flex;
   align-items: center;
@@ -359,9 +360,9 @@ nav.show img.icon_close {
   z-index: 0;
   margin-top: -4rem;
   padding-left: 8rem;
-  left: -5rem;
   border-radius: 0.25rem;
 }
+
 .card {
   background: hsl(210, 100%, 17%);
   padding: 1rem 0;
@@ -372,16 +373,18 @@ nav.show img.icon_close {
 }
 
 .card .title {
-  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-#service h1 {
+#service .text h1 {
   text-align: center;
 }
 
-#service p {
-  text-align: center;
+#service .text {
+  margin-top: -2rem;
+}
+#service .text p {
+  text-align: justify;
 }
 /*#########################  DEPOIMENTOS  ############################################*/
 
@@ -389,6 +392,20 @@ nav.show img.icon_close {
   background: hsl(0, 1%, 86%);
 }
 
+#depoimentos .hed {
+  margin-bottom: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  background: hsl(210, 100%, 17%);
+  z-index: 0;
+  margin-top: -4rem;
+  padding-left: 5rem;
+  border-radius: 0.25rem;
+}
+
+#depoimentos .text h1 {
+  text-align: center;
+}
 #depoimentos .container {
   margin-left: 0;
   margin-right: 0;
@@ -452,14 +469,32 @@ nav.show img.icon_close {
   background: hsl(210, 100%, 17%);
 }
 
-/*############################    CONTATOS   #######################################################*/
+/*############################    CONTATO  #######################################################*/
 
 #contato .grid {
-  gap: 4rem;
+  gap: 2rem;
 }
 
+#contato .hed {
+  margin-bottom: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  background: hsl(210, 100%, 17%);
+  z-index: 0;
+  margin-top: -4rem;
+  margin-left: -5.5rem;
+  margin-right: -5.5rem;
+  padding-left: 9rem;
+}
+
+#contato .text {
+  margin-top: -2.5rem;
+  margin-left: -4rem;
+  margin-right: -4rem;
+}
 #contato .text p {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 #contato .button {
@@ -477,54 +512,250 @@ nav.show img.icon_close {
   border-bottom: 0.25rem solid hsl(210, 100%, 17%);
 }
 
-#contato .grid {
-  gap: 2.5rem;
-}
-
 #contato li {
   color: hsl(210, 100%, 17%);
 }
 
+/*################################   FOOTER    #################################################*/
+
 footer {
   background: hsl(210, 100%, 17%);
+  border-bottom: 4px solid hsl(43, 74%, 49%);
 }
 
 footer .logo {
-  display: inline-block;
-  margin-bottom: 1.5rem;
+  margin-top: -5rem;
+  margin-bottom: -5rem;
+  margin-left: -6rem;
 }
 
-footer .marca {
+footer .brand p {
   color: hsl(0, 0%, 100%);
-  margin-bottom: 0.75rem;
+  margin-bottom: -5rem;
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+footer .social {
+  margin-left: -3rem;
+}
+footer .social .icone {
+  margin-left: 0.5rem;
+  margin-top: 8rem;
+  margin-bottom: -4rem;
 }
 
-footer .social a {
-  margin-right: 2rem;
+/*##########################      RESPONSIVO      ###################################################*/
+
+@media (min-width: 1200px) {
+  nav .menu {
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+    margin-left: 35rem;
+  }
+
+  nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: hsl(43, 74%, 49%);
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+
+    transition: width 0.3s;
+  }
+
+  #header .icon {
+    display: none;
+  }
+}
+/*#########################################################################################################*/
+@media (min-width: 1200px) {
+  #header .text {
+    text-align: center;
+    margin-left: -2rem;
+  }
+
+  #home .image img {
+    position: relative;
+    margin-left: 11.5rem;
+    margin-top: 2rem;
+  }
+
+  #home .image::before {
+    content: '';
+    height: 100%;
+    width: 90%;
+    background: hsl(43, 74%, 49%);
+    position: absolute;
+    top: -3.5rem;
+    z-index: 0;
+    margin-left: 4rem;
+    border-radius: 0.1rem;
+    border-top: 2px solid hsl(210, 100%, 17%);
+    border-left: 2px solid hsl(210, 100%, 17%);
+    border-right: 2px solid hsl(210, 100%, 17%);
+    border-bottom: 2px solid hsl(210, 100%, 17%);
+  }
+
+  .imageIn {
+    width: 70%;
+    height: auto;
+  }
 }
 
-footer .marca .text p {
-  margin-bottom: 1rem;
+/*################################     SOBRE    ###############################################*/
+
+@media (min-width: 1200px) {
+  #sobre .hed {
+    margin-bottom: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    background: hsl(210, 100%, 17%);
+    z-index: 0;
+    margin-top: -4rem;
+    padding-left: 33rem;
+    border-radius: 0.25rem;
+  }
 }
 
-/*#####################################################################################*/
-
-.back-to-top {
-  background: hsl(0, 0%, 100%);
-  width: 7%;
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  padding: 0.5rem;
-  clip-path: circle();
-  line-height: 0;
-
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.4s;
+@media (min-width: 1200px) {
+  .imageS {
+    width: 40%;
+    height: auto;
+  }
 }
 
-.back-to-top.show {
-  visibility: visible;
-  opacity: 1;
+@media (min-width: 1200px) {
+  #sobre .image img {
+    position: relative;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #sobre .image::before {
+    content: '';
+    height: 80%;
+    width: 49%;
+    background: hsl(43, 74%, 49%);
+    border-bottom: 3px solid hsl(210, 100%, 17%);
+    border-right: 2px solid hsl(210, 100%, 17%);
+    border-top: 2px solid hsl(210, 100%, 17%);
+    position: absolute;
+    margin-top: 4rem;
+    margin-left: -4rem;
+    z-index: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #sobre .text {
+    width: 60%;
+    margin-top: -23rem;
+    margin-left: 34rem;
+    text-align: center;
+  }
+}
+
+/*#############################     SERVICE      ######################################################*/
+
+@media (min-width: 1200px) {
+  #service .hed {
+    margin-bottom: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    background: hsl(210, 100%, 17%);
+    z-index: 0;
+    margin-top: -4rem;
+    padding-left: 35rem;
+    border-radius: 0.25rem;
+  }
+}
+
+/*##################################      DEPOIMENTOS       ####################################*/
+
+@media (min-width: 1200px) {
+  #depoimentos .hed {
+    margin-bottom: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    background: hsl(210, 100%, 17%);
+    z-index: 0;
+    margin-top: -4rem;
+    padding-left: 33rem;
+    border-radius: 0.25rem;
+  }
+
+  #depoimentos .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*###########################       CONTATO        ############################################*/
+
+@media (min-width: 1200px) {
+  #contato .hed {
+    margin-bottom: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    background: hsl(210, 100%, 17%);
+    z-index: 0;
+    margin-top: -4rem;
+    margin-left: -5.5rem;
+    margin-right: -5.5rem;
+    padding-left: 35rem;
+  }
+
+  #contato .button {
+    background: hsl(43, 74%, 49%);
+    height: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 2rem;
+    color: hsl(210, 100%, 17%);
+    margin-left: 60rem;
+    padding-left: 0;
+    padding-right: 0.5rem;
+    margin-top: -1rem;
+    transition: background 0.4s;
+  }
+
+  #contato .text {
+    margin-top: -1.5rem;
+  }
+}
+
+/*###################################    FOOTER     #################################################*/
+
+@media (min-width: 1200px) {
+  footer .logo {
+    margin-top: -4.5rem;
+    margin-bottom: -5rem;
+    display: inline-block;
+    margin-left: -4rem;
+  }
+
+  footer .brand p {
+    color: hsl(0, 0%, 100%);
+    margin-top: -2.5rem;
+    margin-bottom: -2rem;
+    margin-left: 8rem;
+  }
+
+  footer .social {
+    margin-left: 1rem;
+  }
+  footer .social .icone {
+    margin-top: 7.5rem;
+    margin-bottom: -3.5rem;
+  }
 }
